@@ -2,5 +2,6 @@
 
 body {
   @apply bg-cover;
-  background-image: url('src/assets/images/background/Camursa.png');
+  /*background-color: rgb(87, 3, 112);*/
+  background-image: url('src/assets/images/background/top-view-copy-space-cherry-plum-pink-background.jpg');
 }
