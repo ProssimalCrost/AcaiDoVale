@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+body {
+  @apply bg-cover;
+  background-image: url('src/assets/images/background/Camursa.png');
+}
