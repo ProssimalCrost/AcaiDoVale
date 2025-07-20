@@ -3,17 +3,36 @@ import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 export default function BackG() {
   return (
     <ParallaxProvider>
-      <Parallax speed={-20}>
-        <div style={{
-          backgroundImage: "url('src/assets/images/background/pexels-sabel-blanco-662810-3034427.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          height: "100vh"
-        }}>
-        </div>
-      </Parallax>
+      <div style={{ position: 'relative', height: '50vh', overflow: 'hidden' }}>
+        
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            zIndex: -1
+          }}
+        >
+          <source src="src/assets/images/background/Videos/acaimesa.mp4" type="video/mp4" />
+          Seu navegador não suporta vídeo.
+        </video>
 
-      <section style={{ height: "100vh", background: "#222", color: "white" }}>
+        <Parallax speed={-20}>
+          <div style={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', color: '#fff' }}>
+            
+          </div>
+        </Parallax>
+
+      </div>
+
+      <section style={{ height: "100vh", background: "#222", color: "white", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <h2>Conteúdo normal</h2>
       </section>
     </ParallaxProvider>
