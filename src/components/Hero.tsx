@@ -3,7 +3,7 @@ import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 export default function BackG() {
   return (
     <ParallaxProvider>
-      <div style={{ position: 'relative', height: '60vh', overflow: 'hidden' }}>
+      <div style={{ position: 'relative', height: '70vh', overflow: 'hidden' }}>
         
         <Parallax speed={-50}>
           <img 
@@ -23,7 +23,7 @@ export default function BackG() {
 
          <div style={{
             position: 'relative',
-            zIndex: 1,
+            zIndex: -1,
             color: '#fff',
             height: '70vh',
             display: 'flex',
