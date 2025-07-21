@@ -3,9 +3,9 @@ import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 export default function BackG() {
   return (
     <ParallaxProvider>
-      <div style={{ position: 'relative', height: '100vh', overflow: 'hidden' }}>
+      <div style={{ position: 'relative', height: '60vh', overflow: 'hidden' }}>
         
-        <Parallax speed={-20}>
+        <Parallax speed={-50}>
           <img 
             src="src/assets/images/background/images/gpt.png" 
             alt="Parallax Background"
@@ -25,7 +25,7 @@ export default function BackG() {
             position: 'relative',
             zIndex: 1,
             color: '#fff',
-            height: '60vh',
+            height: '70vh',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center'

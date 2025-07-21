@@ -2,7 +2,7 @@ import 'flowbite';
 
 export function Header() {
     return (
-        <nav className="bg-purple-700 border-gray-20">
+        <nav className="bg-purple-800 border-gray-20">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="http://localhost:5173/" className="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="src/assets/images/design-de-logotipo-de-mangosteen-modelo-de-ilustracao-vetorial-criativa-do-logotipo-mangosteen_647432-1846.png" className="w-30 h-30 rounded" alt="Flowbite Logo" />
