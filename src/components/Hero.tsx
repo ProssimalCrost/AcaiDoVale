@@ -1,38 +1,41 @@
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 
-export default function Hero() {
+export default function BackG() {
   return (
     <ParallaxProvider>
-      <div style={{ position: 'relative', height: '50vh', overflow: 'hidden' }}>
+      <div style={{ position: 'relative', height: '60vh', overflow: 'hidden' }}>
         
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            zIndex: -1
-          }}
-        >
-          <source src="src/assets/images/background/Videos/acaimesa.mp4" type="video/mp4" />
-          Seu navegador não suporta vídeo.
-        </video>
-
         <Parallax speed={-20}>
-          <div style={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', color: '#fff' }}>
-            
-          </div>
+          <img 
+            src="src/assets/images/background/images/tigelas.jpg" 
+            alt="Parallax Background"
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              
+              top: 0,
+              left: 0,
+              zIndex: -1
+            }}
+          />
         </Parallax>
+
+         <div style={{
+            position: 'relative',
+            zIndex: 1,
+            color: '#fff',
+            height: '60vh',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+         }}>
+         
+        </div>
 
       </div>
 
-      <section style={{ height: "100vh", background: "#222", color: "white", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <section style={{ height: "150vh", background: "#222", color: "white", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <h2>Conteúdo normal</h2>
       </section>
     </ParallaxProvider>
