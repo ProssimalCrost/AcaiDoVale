@@ -5,8 +5,9 @@ import { motion } from 'framer-motion';
 export default function BackG() {
   return (
     <ParallaxProvider>
-      <div style={{ position: 'relative', height: '78vh', overflow: 'hidden' }}>
-        
+    
+      <div style={{ position: 'relative', height: '78vh', overflow: 'hidden' }}>  
+      
         <Parallax speed={-50}>
           <img 
             src="src/assets/images/background/images/gptroxo.png" 
@@ -22,18 +23,19 @@ export default function BackG() {
             }}
           />
         </Parallax>
-
-         <div style={{
-            position: 'relative',
-            zIndex: -1,
-            color: '#fff',
-            height: '100vh',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center'
-         }}>
-         
-        </div>
+      
+         {/* Gradiente de transição */}
+    <div
+      className="
+        absolute bottom-0 left-0 w-full
+        h-20            /* ajuste a altura até ficar suave */
+        bg-gradient-to-b
+        from-transparent /* topo: transparente */
+        to-purple-800    /* base: mesma cor do início da sua section */
+        pointer-events-none
+        z-0
+      "
+    ></div>
 
       </div>
 
